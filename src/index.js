@@ -1,17 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import { EnhanceMouse, EnhanceCat } from "./coding_share_hoc/ii_index";
+import MouseTracker from "./share_coding_render_props/render_props";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App render={() => <div>黄华康</div>} /> */}
+    开发中
+    <EnhanceMouse />
+    <EnhanceCat />
+    <hr></hr>
+    <MouseTracker />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
